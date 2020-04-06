@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #FBFBFB;
+}
+
+.p-principal-section{
+    margin: 5% auto;
+    width: 50%;
+    height: auto;
+    padding-bottom: 3%;
+    background: #FFF;
+    text-align: center;
+}
+
+.p-title-operacion{
+    color: #000;
+    font-family: letra;
+    font-size: 17px;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 0.5px solid #E8EAED;
+}
+
+
+.p-ine, .p-lic{
+    font-family: letra;
+    src: url("../font/Poppins/Poppins-Regular.ttf");
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+.p-nota{
+    font-family: letra;
+    src: url("../font/Poppins/Poppins-Regular.ttf");
+    font-size: 12px;
+    color: grey;
+}
+
+
+.p-usuario, .p-contrasena{
+    margin: auto;
+    margin-bottom: 15px;
+    outline: none;
+    width: 50%;
+    height: 30px;
+    display: block;
+    font-family: letra;
+    text-align: center;
+    color:black;
+    border: 1px solid #E8EAED;    
+}
+
+.p-archivoP{
+    width: 50%;
+}
+
+.p-enviar{
+    padding: 8px;
+    width: 15%;
+    background: #29303B;
+    color:#FFF;
+    border:0;
+}

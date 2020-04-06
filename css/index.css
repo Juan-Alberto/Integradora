@@ -1,0 +1,633 @@
+/*AGREGACIÓN DE LETRA*/
+
+@font-face{
+    font-family: letra;
+    src: url("../font/Poppins/Poppins-Regular.ttf");
+}
+
+/*ELIMINAR LOS MARGENES POR DEFECTOS*/
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #FBFBFB;
+}
+
+/*ENCABEZADO*/
+
+.contenedor{
+    width: 95%;
+    max-width: 1280px;
+    margin: auto 12px;
+}
+
+.menu{
+    background: #29303B;
+    padding: 15px 20px;
+    
+}
+
+.menu .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+}
+
+
+#encabezado, .logo{
+    font-size: 17px;
+    font-weight: bold;
+    font-family: letra;
+}
+
+.logo{
+    text-decoration: none;
+    color: #FFF;
+}
+
+/*BARRA DE MENU*/
+
+nav ul li{
+    display: inline-block;
+    margin: 0 13px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #D4D8DB;
+    font-family: letra;
+    font-size: 15px;
+    padding: 4px;
+}
+
+
+/*INICAR HOVER*/
+.servicios:hover{
+    color: #FFF;
+    cursor: pointer;
+}
+
+.opciones{
+    font-weight: 400;
+}
+
+.opciones:hover{
+    color: #FFF;
+}
+
+
+/*INICIO INTRO*/
+#intro{
+    background: url("../img/background_cranes.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: letra;
+    display: flex;
+}
+
+#intro .izquierda{
+    background-color: rgba(41, 48, 59, 0.897);
+    width: 100%;
+    padding: 140px; 
+}
+
+
+#intro .izquierda .mensaje{
+    font-size: 15px;
+    text-align: center;
+    color: #FFF;
+    padding: 20px;
+}
+
+.servis{
+    font-size: 20px;
+    text-align: center;
+    color: #FFF;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+#intro h1{
+    font-size: 35px;
+    font-weight: bolder;
+    letter-spacing: 15px;
+    text-align: center;
+    padding: 30px;
+    color:#FFF;
+    border-bottom: 3px solid #0072C5;
+    padding-bottom: 20px;
+    padding: 5px;
+}
+
+font{
+    color: #0072C5;
+}
+
+
+/** Multinivel - submenu nosotros**/
+.dropdown ul {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px) {
+    .dropdown ul {
+        flex-direction: row;
+    }
+}
+
+.dropdown ul li  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.dropdown ul li ul  {
+    margin-top: 1rem;
+}
+.dropdown ul li ul li a:hover{
+    color: #FFF;
+}
+
+@media screen and (min-width:768px) {
+    .dropdown ul li  {
+        position: relative;
+        display: flex;
+        flex: 1 1 100%;
+    }
+    .dropdown ul li ul {
+        display: none;
+        position: absolute;
+        top:100%;
+        left:0;
+    }
+
+    .dropdown ul li:hover ul {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgba(116, 209, 76, 0.747);
+        margin:0;
+    }
+
+}
+
+span{
+    color:#D4D8DB;
+    padding: 4px;
+}
+
+
+/*INICAR SESIÓN*/
+
+.in-sesion{
+    background: #74D14C;
+    padding: 15px;
+    text-align: center;
+}
+
+.opciones-in{
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 3.5%;
+}
+
+.user , .password, .entrar{
+    font-family: letra;
+    padding: 2.5px 30px;
+    display: inline-block;
+    margin-right: 13px;
+    border:0;
+    outline: none;
+
+}
+
+.user, .password{
+    border-bottom: 1px solid #ccc;
+    font-weight: 700;
+    background: none;
+}
+
+.user:focus, .password:focus{
+    border-bottom: 1px solid #0072C5;
+    transition: all 1s ease;
+}
+
+
+.entrar{
+    background: rgba(9, 111, 184, 0.822);
+    font-size: 13px;
+    padding: 7px;
+    color: #FFF;
+    border-radius: 6px;
+    cursor: pointer;
+    -webkit-box-shadow: 7px 4px 16px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 4px 16px -4px rgba(0,0,0,0.75);
+    box-shadow: 7px 4px 16px -4px rgba(0,0,0,0.75);
+}
+
+.entrar:hover{
+    background: #0072C5;
+    transition: all 1s ease;
+}
+
+
+.btn-flotante.activo{
+    color: #0072C5;
+    -webkit-box-shadow: 0px 6px 32px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 32px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 32px -10px rgba(0,0,0,0.75);
+}
+
+.in-sesion{
+    background-color: rgba(252, 249, 249, 0.979);
+    position: fixed;
+    bottom:-100%;
+    transition: all 0.26s ease-in;
+    width: 100%;
+    -webkit-box-shadow: 0px -18px 36px -16px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px -18px 36px -16px rgba(0,0,0,0.52);
+    box-shadow: 0px -18px 36px -16px rgba(0,0,0,0.52);
+}
+
+.in-sesion.activo {
+    bottom: 0;
+}
+
+.text-info{
+    text-align: center;
+    font-family: letra;
+    color:#29303B;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.rojo{
+    color: red;
+    font-family: letra;
+    font-weight: 600;
+}
+
+/*RECORDAR CONTRASEÑA*/
+.remember{
+    text-decoration: none;
+    color: #0072C5;
+    font-family: letra;
+    font-size: 14px;
+}
+
+
+/*SESION 2*/
+
+.in-sesion2{
+    background: #FFF;
+    display: flex;
+    justify-content: space-around;
+    font-family: letra;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.imagenes-s1{
+    display:block;
+    margin:auto;
+    padding: 5px;
+    padding-top: 8%;
+    width: 35%;
+    padding-bottom: 10px;
+}
+
+.publicidad{
+    text-align: center;
+    color:rgba(41, 48, 59, 0.897);
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.ate-clien , .type-serv , .plans{
+    padding-bottom: 20px;
+}
+
+.title-serv{
+    color: #0072C5;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #D4D8DB;
+}
+
+/*SESION NOSTROSO-INFO*/
+
+.info-nosotros{
+    background: #FBFBFB;
+    text-align: center;
+    font-family: letra;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.title-nosotros{
+    color: rgba(41, 48, 59, 0.897);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 5%;
+    padding-bottom: 30px;
+    font-weight: bolder;
+}
+
+.proceso{
+    padding-top: 5%;
+    color: #0072C5;
+    padding-bottom: 30px;
+    justify-content: space-around;
+}
+
+.contenido-pasos{
+    display: flex;
+    justify-content: space-around;  
+}
+.pasos-text{
+    font-weight: bolder;
+    color: #868686;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.icon-proceso{
+    font-size: 45px;
+    color: #D4D8DB;
+    cursor: pointer;
+}
+
+.icon-proceso:hover{
+    color: #0072C5;
+}
+
+.nosotros-text{
+    font-size: 15px;
+    color:rgba(41, 48, 59, 0.897);
+}
+
+/*SESION 3*/
+
+.in-sesion3{
+    display: flex;
+    justify-content: space-around;
+    font-family: letra;
+    height: auto;
+    width: 100%;
+    background: #FFF;
+    padding-bottom: 2%;
+}
+
+.publicidad3{
+    text-align: center;
+    color:#FFF;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.nosotros3{
+    color: #29303B;
+    font-size: 19px;
+    font-weight: 400;
+    padding: 8%;
+    padding-bottom: 10%;
+}
+
+
+.info-text3{
+    font-weight: bolder;
+    color: #29303B;
+    font-family: letra;
+    font-size: 15px;
+    padding-bottom: 10%;
+    
+}
+
+.plans3{
+    text-align: center;
+}
+
+.horarios-t , .servicios-t{
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.title-nosotros{
+    font-family: letra;
+}
+
+/*Pablo*/
+
+.p-cotizacion{
+    margin: auto;
+    margin-bottom: 15px;
+    outline: none;
+    width: 120%;
+    height: 30px;
+    display: block;
+    font-family: letra;
+    text-align: center;
+    color:black;
+    border: 0.5px solid #E8EAED;  
+}
+
+.p-cotizar{
+    padding: 8px;
+    width: 120%;
+    background: #0072C5;
+    color:#FFF;
+    border:0;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.link-registro{
+    padding-top: 40px;
+    font-size: 15px;
+    color: #29303B;
+    font-family: letra;
+}
+
+
+
+/*CARRUSEL*/
+
+ul,ol{
+	list-style: none;
+}
+
+
+.slideshow{
+	width: 100%;
+	position: relative;
+}
+
+.slider li, ul{
+	width: 100%;
+}
+
+.slider li{
+	overflow: hidden;
+}
+
+.slider li img{
+	width: 20%;
+}
+
+.pagination{
+	position: absolute;
+	top: 102%;
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+}
+
+.pagination li{
+	font-size: 20px;
+	margin: 2px 5px;
+	color: #858585;
+	cursor: pointer;
+}
+
+/*FOOTER*/
+
+.footer-pie{
+    display: flex;
+    justify-content: space-around;
+    background: #29303B;
+    border-bottom: 0.5px solid rgba(184, 185, 185, 0.664);
+
+}
+
+.info-1{
+    font-family: letra;
+    width: auto;
+    height: auto;
+}
+
+.title-info{
+    font-size: 16px;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    border-bottom: 0.5px solid #0072C5;
+    text-transform: uppercase;
+}
+
+.info-text{
+    padding-top: 10px;
+    color: #D4D8DB;
+    font-family: letra;
+    font-size: 12px;
+    padding-bottom: 25%;
+    
+}
+
+.red-social-copy{
+    display: flex;
+    justify-content: space-around;
+    background: #29303B;
+    padding: 10px;
+}
+
+
+.red-copy{
+    font-family: letra;
+    font-size: 12px;
+    color: #D4D8DB;
+}
+
+.icon-facebook2,.icon-whatsapp,.icon-google2,.icon-youtube2{
+    padding: 0 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+/*HEADER RECUPERAR COTRASEÑA*/
+
+.title-recuperar{
+    font-family: letra;
+    font-size: 16px;
+}
+
+/*CARRUSEL, EMPRESAS*/
+
+.cap1{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.title-empresa{
+    font-family: letra;
+    padding: 30px;
+    color:#0072C5;
+}
+
+/**
+    DISEÑO DE ALERTAS 
+**
+*/
+
+.notificacion-user{
+    display: none;
+    background: #F2DEDE;
+    color: #C64A48;
+    border: 0.5px solid #C64A48;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 30%;
+    font-family: letra;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.notificacion-pass{
+    display: none;
+    background: #F2DEDE;
+    color: #C64A48;
+    border: 0.5px solid #C64A48;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 47%;
+    font-family: letra;
+    font-size: 12px;
+    padding: 10px;
+}
+
+
+/*
+*
+*alerta de error de inicio de sesion*
+*/
+
+.error{
+    background-color: #E74F4F;
+    top: 0;
+    padding: 10px 0 ;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-family: letra;
+    display: none; 
+}
+
+.error-alert{
+    color: #FFF;
+    font-size: 14px;
+}

@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #FBFBFB;
+}
+
+.principal-section{
+    margin: 5% auto;
+    width: 50%;
+    height: auto;
+    padding-bottom: 3%;
+    background: #FFF;
+    text-align: center;
+}
+
+.title-operacion{
+    color: #000;
+    font-family: letra;
+    font-size: 17px;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 0.5px solid #E8EAED;
+}
+
+.texto-recuperar{
+    padding: 10px;
+    font-family: letra;
+    font-size: 15px;
+    text-align: left;
+}
+
+.pasos{
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.type-user{
+    font-family: letra;
+    color: #000;
+    font-size: 15px;
+}
+
+
+.type-select{
+    background: #FFF;
+    padding-top: 10px;
+}
+
+.usuario, .contrasena{
+    margin: auto;
+    margin-bottom: 15px;
+    outline: none;
+    width: 50%;
+    height: 30px;
+    display: block;
+    font-family: letra;
+    text-align: center;
+    color:#CCC;
+    border: 1px solid #E8EAED;    
+}
+
+.enviar{
+    padding: 8px;
+    width: 12%;
+    background: #0072C5;
+    color:#FFF;
+    border:0;
+}
